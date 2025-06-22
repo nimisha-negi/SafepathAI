@@ -1,0 +1,193 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0b0e17;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  height: 36px;
+  margin-right: 12px;
+}
+
+.brand-name {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+
+.landing-page {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: #12151c;
+  overflow-x: hidden;
+}
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-video {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+object-fit: cover;
+  display: block;
+  z-index: 1;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* In your LandingPage.css */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Darken video */
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 2; /* above the dark layer */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.overlay h1, .overlay p, .overlay .buttons {
+  animation: fadeIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+.overlay h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.overlay p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.buttons .btn {
+  padding: 0.8rem 2rem;
+  margin: 0 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn.primary {
+  background: #2A9D8F;
+  color: white;
+}
+
+.btn.secondary {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 1px solid white;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.feature-highlight {
+  padding: 4rem 2rem;
+  background: #1c1f26;
+  text-align: center;
+}
+
+.feature-highlight h2 {
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature {
+  width: 220px;
+  padding: 1rem;
+  background: #292d36;
+  border-radius: 8px;
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  background-color: #0b0e17;
+  color: #ccc;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #333;
+}
+.walkthrough-section {
+  padding: 4rem 2rem;
+  background-color: #1a1d25;
+  text-align: center;
+}
+
+.walkthrough-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.walkthrough-steps {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.walkthrough-step {
+  background: #292d36;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 200px;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+.footer p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
