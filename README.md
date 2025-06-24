@@ -1,7 +1,10 @@
 # 🚨 SafePathAI
 
 **SafePathAI** is a safety-first smart navigation tool designed to alert users of danger zones along their route. The application fetches red zone data (e.g., from Delhi Police datasets) and notifies users visually and audibly when they approach these areas. It is designed with future-ready AI/ML capabilities to enhance user safety beyond static red zone mapping. 
+## 🚀 Live Demo
 
+Check out the live application here:  
+👉 [https://safepath-ai.vercel.app/]
 
 
 ## 📌 Features
