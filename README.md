@@ -1,11 +1,18 @@
 # 🚨 SafePathAI
 
-**SafePathAI** is a safety-first smart navigation tool designed to alert users of danger zones along their route. The application fetches red zone data (e.g., from Delhi Police datasets) and notifies users visually and audibly when they approach these areas.
+**SafePathAI** is a safety-first smart navigation tool designed to alert users of danger zones along their route. The application fetches red zone data (e.g., from Delhi Police datasets) and notifies users visually and audibly when they approach these areas. It is designed with future-ready AI/ML capabilities to enhance user safety beyond static red zone mapping. 
+
+
+
+
+- Anomaly Detection
+Detect suspicious patterns in movement (e.g., sudden stops, route deviation) using unsupervised learning techniques like KMeans
 
 
 ## 📌 Features
 
-- 🔴 **Red Zone Alerts**: Detects and highlights danger zones on a route.
+- 🔴 **Red Zone Alerts**: Use historical crime data and real-time inputs to predict potential danger zones dynamically rather than relying only on static datasets.
+- ⚠️ **Anomaly Detection**: Detect suspicious patterns in movement (e.g., sudden stops, route deviation) using unsupervised learning techniques like KMeans
 - 🧭 **Live Location Tracking**: Shows your current location dynamically.
 - 🚨 **Proximity Warning System**: Alerts users with a beep and on-screen message 50 meters before entering a danger zone.
 - 🗺️ **Simple Route Display**: Allows users to enter 'From' and 'To' points to view a route.
@@ -27,6 +34,7 @@
 - Node.js
 - Express.js
 - MongoDB (for storing red zone data, routes, etc.)
+- AI/ML
 
 ### 📡 Data Sources
 - Delhi Police Red Zone Dataset
