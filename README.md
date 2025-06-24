@@ -4,11 +4,6 @@
 
 
 
-
-- Anomaly Detection
-Detect suspicious patterns in movement (e.g., sudden stops, route deviation) using unsupervised learning techniques like KMeans
-
-
 ## 📌 Features
 
 - 🔴 **Red Zone Alerts**: Use historical crime data and real-time inputs to predict potential danger zones dynamically rather than relying only on static datasets.
@@ -31,10 +26,11 @@ Detect suspicious patterns in movement (e.g., sudden stops, route deviation) usi
 - Geolocation API
 
 ### 🛠 Backend
+- AI/ML
 - Node.js
 - Express.js
 - MongoDB (for storing red zone data, routes, etc.)
-- AI/ML
+
 
 ### 📡 Data Sources
 - Delhi Police Red Zone Dataset
